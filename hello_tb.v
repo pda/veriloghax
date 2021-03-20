@@ -7,6 +7,9 @@ module hello_tb;
     $display("hello verilog");
     // $monitor("[%4t] clk=%b x=%b", $time, clk, x);
     $monitor("[t:%4t] x=%b", $time, x);
+
+    $dumpfile("hello.vcd");
+    $dumpvars(0,hello_tb);
   end
 
   // clock & reset

@@ -1,2 +1,5 @@
 # Icarus Verilog output/executable
 a.out
+
+# Value Change Dump file for viewing waveform (e.g. GTKWave)
+*.vcd
