@@ -50,3 +50,7 @@ References
 - http://referencedesigner.com/tutorials/verilog/verilog_13.php
 - https://iverilog.fandom.com/wiki/GTKWave
 - https://ughe.github.io/2018/11/06/gtkwave-osx
+
+### Microchip Verilog models
+
+- https://www.microchip.com/doclisting/TechDoc.aspx?type=Verilog
