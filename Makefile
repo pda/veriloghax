@@ -1,4 +1,4 @@
-SRC := $(wildcard *.v)
+SRC := hello_tb.v
 BIN := a.out
 
 .PHONY: test
