@@ -30,6 +30,45 @@ GTKWave showing the 4-bit counter simulated in commit `d1c6c06`:
 
 ![GTKWave 4-bit counter](gtkwave-4bit-counter.png)
 
+
+### Shell history
+
+Coming back to this brief foray after five months, I had forgotten everything.
+Here's the distilled shell history I found that gave me some clues to get started again:
+
+    brew search icarus
+    brew info icarus-verilog
+    brew install icarus-verilog
+    man vvp
+    vvp
+    vvp --help
+    vvp
+    vvp a.out
+    vvp --help
+    vvp -v a.out
+    iverilog hello.v && vvp a.out
+    iverilog --help
+    iverilog
+    brew search yosys
+    brew install yosys
+    iverilog hello.v
+    iverilog --help
+    iverilog -h
+    iverilog hello.v
+    iverilog hello.v && vvp a.out
+    brew install gtkwave
+    /Applications/gtkwave.app/Contents/Resources/bin/gtkwave
+    /Applications/gtkwave.app/Contents/Resources/bin/gtkwave hello.vcd
+    /Applications/gtkwave.app/Contents/Resources/bin/gtkwave_bin_launcher.sh
+    /Applications/gtkwave.app/Contents/Resources/bin/gtkwave_bin_launcher.sh gtkwave
+    ls -l /Applications/gtkwave.app/Contents/Resources/bin
+    yosys -p "synth_ice40 -blif hello.blif" hello.v
+    arachne-pnr -d 1k -p hello.pcf hello.blif -o hello.asc
+    brew search arachne
+    man yosys
+    /Applications/gtkwave.app/Contents/Resources/bin/gtkwave hello.vcd
+
+
 References
 ----------
 
